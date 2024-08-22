@@ -1,0 +1,15 @@
+{
+	"name": "Bogsiren Ceridwen workspace",
+
+	"image": "mcr.microsoft.com/devcontainers/dotnet:1-8.0-bookworm",
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-dotnettools.csdevkit",
+				"esbenp.prettier-vscode",
+				"ms-dotnettools.csharp"
+			]
+		}
+	}
+}
