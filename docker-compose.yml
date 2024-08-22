@@ -1,13 +1,28 @@
 name: bogsi-ceridwen 
 
 services:
-  console:
+  ceridwen-console:
     build: 
       context: .
       dockerfile: Dockerfile
-
+    environment:
+      OLLAMA_CONNECTION_STR: "http://ceridwen-ollama:11434"
     networks:
       - ceridwen-network
+    depends_on: 
+      - ceridwen-ollama
+  
+
+  ceridwen-ollama:
+    image: ollama/ollama
+    container_name: ceridwen-ollama
+    ports: 
+      - "11434:11434"
+    volumes:
+      - ollama:/root/.ollama
+
+volumes:
+  ollama:
 
 networks:
   ceridwen-network:

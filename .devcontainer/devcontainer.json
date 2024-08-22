@@ -8,7 +8,8 @@
 			"extensions": [
 				"ms-dotnettools.csdevkit",
 				"esbenp.prettier-vscode",
-				"ms-dotnettools.csharp"
+				"ms-dotnettools.csharp",
+				"ms-azuretools.vscode-docker"
 			]
 		}
 	}
