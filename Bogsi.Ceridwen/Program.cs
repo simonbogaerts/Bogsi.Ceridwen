@@ -1,2 +1,3 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿var ceridwen = "Ceridwen, a figure from Welsh mythology, said to be the keeper of the cauldron of knowledge, mother of transformation and the white lady of inspiration and death.";
+
+Console.WriteLine(ceridwen);

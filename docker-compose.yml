@@ -1,0 +1,13 @@
+name: bogsi-ceridwen 
+
+services:
+  console:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+
+    networks:
+      - ceridwen-network
+
+networks:
+  ceridwen-network:
