@@ -9,6 +9,7 @@ services:
     stdin_open: true
     environment:
       OLLAMA_CONNECTION_STR: "http://ceridwen-ollama:11434"
+      OLLAMA_MODEL: "llama3"
     depends_on: 
       - ceridwen-ollama
   

@@ -5,7 +5,7 @@ Ceridwen, a figure from Welsh mythology, said to be the keeper of the cauldron o
 
 # What is Ceridwen?
 
-An simple application that will run a Large Language Model (LLM) on your local machine, utilizing your GPU (prefferably). 
+An simple application that will run a Large Language Model (LLM) on your local machine, utilizing your GPU (preferably). 
 
 The application itself is a basic dotnet console application that will pass on your questions to an Ollama model by Meta. 
 
@@ -41,7 +41,11 @@ To stop Ceridwen ctrl + C out of the attached window and use the following docke
 docker compose down
 ```
 
-Cerdiwen can be run on the CPU instead of the GPU by commenting out the deploy section in the docker-compose.yml, however this will vastly decrease the time required for it to handle the prompts and make it far less useable as a tool. 
+## Notes 
+
+* Cerdiwen can be run on the CPU instead of the GPU by commenting out the deploy section in the docker-compose.yml, however this will vastly decrease the time required for it to handle the prompts and make it far less useable as a tool. 
+* By default llama3 model is used, adjust the environment variable in the docker compose if you want to use a larger/newer model. 
+
 
 
 # Resources 
