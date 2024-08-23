@@ -9,7 +9,8 @@
 				"ms-dotnettools.csdevkit",
 				"esbenp.prettier-vscode",
 				"ms-dotnettools.csharp",
-				"ms-azuretools.vscode-docker"
+				"ms-azuretools.vscode-docker",
+				"kreativ-software.csharpextensions"
 			]
 		}
 	}
