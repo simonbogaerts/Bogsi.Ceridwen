@@ -9,6 +9,8 @@ An simple application that will run a Large Language Model (LLM) on your local m
 
 The application itself is a basic dotnet console application that will pass on your questions to an Ollama model by Meta. 
 
+This was inteded as an experiment while learning docker/docker-compose/devcontainers. Not sure if further updates will be made to the repo. 
+
 
 # Prerequisites 
 

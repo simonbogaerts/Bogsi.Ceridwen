@@ -75,7 +75,7 @@ public class OllamaApiClientProvider : IOllamaApiClientProvider
 
             if (isDownloaded) 
             {
-                Console.WriteLine($"{client.SelectedModel} found.");
+                Console.WriteLine($"> {client.SelectedModel} found.");
 
                 break;
             }
@@ -83,9 +83,9 @@ public class OllamaApiClientProvider : IOllamaApiClientProvider
 
         if (!isDownloaded) 
         {
-            Console.WriteLine($"{client.SelectedModel} not found, download will ensue.");
+            Console.WriteLine($"> {client.SelectedModel} not found, download will ensue.");
 
-            await client.PullModel(client.SelectedModel, status => Console.WriteLine($"({status.Percent}%) {status.Status}"));
+            await client.PullModel(client.SelectedModel, status => Console.WriteLine($"> ({status.Percent}%) {status.Status}"));
         }
     }
 }
